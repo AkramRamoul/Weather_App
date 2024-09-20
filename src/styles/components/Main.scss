@@ -1,0 +1,27 @@
+@use "../variables/variables" as *;
+
+.Main {
+  margin: 0;
+  padding: 20px 0;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  height: $main-height;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 821px) {
+    margin: 0 2rem;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rosybrown;
+  }
+
+  // Firefox specific scrollbar styles
+  scrollbar-width: thin;
+  scrollbar-color: rosybrown transparent;
+}
